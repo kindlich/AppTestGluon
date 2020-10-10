@@ -27,5 +27,5 @@ jobs:
         echo GraalVM home below
         echo "$GRAALVM_HOME"
         echo GraalVM home Above
-        cat GITHUB_ENV
+        printenv
  
