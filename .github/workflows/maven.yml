@@ -20,6 +20,9 @@ jobs:
         graalvm-version: 20.2.0
         # Java version: ex.) java8, java11
         java-version: java11
+    - name: Install native-image to GraalVM
+      run: |
+        gu install native-image
 
     - uses: actions/checkout@v2
     - name: Create and list all
