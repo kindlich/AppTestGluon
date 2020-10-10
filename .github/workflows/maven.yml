@@ -41,4 +41,15 @@ jobs:
       run: | # 
         gu list
         mvn client:build
-        find
+    - name: Zip Release
+      uses: TheDoctor0/zip-release@0.4.1
+      with: 
+        filename: client.zip 
+        path: ./target/client
+    - name: Publish to release
+      uses: actions/upload-release-asset@v1
+      with:
+        upload_url: https://api.github.com/repos/kindlich/AppTestGluon/releases/32410469/assets 
+        asset_path: ./release.zip
+        asset_name: test
+        asset_content_type: application/zip 
