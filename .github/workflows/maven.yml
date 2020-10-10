@@ -18,14 +18,12 @@ jobs:
         java-version: 11
         graalvm-version: 20.2.0
         native-image: true
-    - name: Install Graal NativeImage
-      run: gu install native-image
+    - name: Set GraalVM Home
+      run: echo GRAALVM_HOME=$JAVA_HOME >> GITHUB_ENV
     - uses: actions/checkout@v2
     - name: Create and list all
-      env:
-        GRAALVM_HOME: $JAVA_HOME
-      run: |
+      run: | # mvn client:build
         gu list
-        mvn client:build
+        echo $GRAALVM_HOME
         find
  
