@@ -14,17 +14,13 @@ jobs:
 
     steps:
     - name: Setup GraalVM CE
-      uses: ayltai/setup-graalvm@v1
+      uses: rtc11/setup-graalvm@master
       with:
-        # GraalVM version: ex.) 19.3.0
-        graalvm-version: 20.2.0
-        # Java version: ex.) 8, 11
-        java-version: 11
-        native-image: true
+        args: https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.2.0/graalvm-ce-java11-linux-amd64-20.2.0.tar.gz
     - uses: actions/checkout@v2
     - name: Create and list all
       run: |
-        mvn client:build
         gu list
+        mvn client:build
         find
  
