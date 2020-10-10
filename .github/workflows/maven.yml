@@ -25,6 +25,6 @@ jobs:
       run: | # mvn client:build
         gu list
         echo GraalVM home below
-        echo $GRAALVM_HOME
+        sh "echo $GRAALVM_HOME"
         echo GraalVM home Above
  
