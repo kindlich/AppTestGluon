@@ -18,8 +18,8 @@ jobs:
       with:
         # GraalVM version: ex.) 19.3.0
         graalvm-version: 20.2.0
-        # Java version: ex.) java8, java11
-        java-version: java11
+        # Java version: ex.) 8, 11
+        java-version: 11
         native-image: true
     - uses: actions/checkout@v2
     - name: Create and list all
