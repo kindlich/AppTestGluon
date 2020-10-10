@@ -23,7 +23,8 @@ jobs:
         native-image: true
     - uses: actions/checkout@v2
     - name: Create and list all
-      run: | #        mvn client:build
+      run: |
+        mvn client:build
         gu list
         find
  
