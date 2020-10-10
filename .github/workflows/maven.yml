@@ -24,8 +24,8 @@ jobs:
     - name: Create and list all
       run: | # mvn client:build
         gu list
-        echo GraalVM home below
-        echo "$GRAALVM_HOME"
-        echo GraalVM home Above
+        echo JavaHome home below
+        echo "$JAVA_HOME"
+        echo JavaHome home Above
         printenv
  
