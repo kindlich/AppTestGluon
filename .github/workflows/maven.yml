@@ -19,12 +19,12 @@ jobs:
         graalvm-version: 20.2.0
         native-image: true
     - name: Set GraalVM Home
-      run: echo GRAALVM_HOME=$JAVA_HOME >> GITHUB_ENV
+      run: echo "GRAALVM_HOME=$JAVA_HOME" >> GITHUB_ENV
     - uses: actions/checkout@v2
     - name: Create and list all
       run: | # mvn client:build
         gu list
         echo GraalVM home below
-        sh "echo $GRAALVM_HOME"
+        echo "$GRAALVM_HOME"
         echo GraalVM home Above
  
