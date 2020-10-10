@@ -13,14 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Setup GraalVM CE
-      uses: rtc11/setup-graalvm@master
+    - uses: ayltai/setup-graalvm@v1
       with:
-        args: https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.2.0/graalvm-ce-java11-linux-amd64-20.2.0.tar.gz
+        java-version: 11
+        graalvm-version: 20.2.0
+        native-image: true
     - name: Install Graal NativeImage
       run: gu install native-image
     - uses: actions/checkout@v2
     - name: Create and list all
+      env:
+        GRAALVM_HOME: $JAVA_HOME
       run: |
         gu list
         mvn client:build
