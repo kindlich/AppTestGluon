@@ -38,11 +38,7 @@ jobs:
       shell: cmd
       run: | #
         mvn client:build
-    - name: List all files
-      shell: cmd
-      run: tree
-
-#   - uses: actions/upload-artifact@v2
-#     with:
-#       name: x86_64-windows
-#       path: ./target/client/x86_64-windows/
+    - uses: actions/upload-artifact@v2
+      with:
+        name: x86_64-windows
+        path: ./target/client/x86_64-windows/
