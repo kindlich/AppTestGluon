@@ -36,9 +36,10 @@ jobs:
     - name: Create and list all
       shell: cmd
       run: | #
-        gu list
         mvn client:build
-        tree
+    - name: List all files
+      shell: cmd
+      run: tree
 
 #   - uses: actions/upload-artifact@v2
 #     with:
