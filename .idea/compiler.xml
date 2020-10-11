@@ -13,4 +13,9 @@
       <module name="inventory_test_gluon" target="11" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="inventory_test_gluon" options="--add-modules java.base" />
+    </option>
+  </component>
 </project>
