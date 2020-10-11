@@ -22,5 +22,8 @@
     <orderEntry type="library" name="Maven: com.gluonhq.attach:statusbar:4.0.9" level="project" />
     <orderEntry type="library" name="Maven: com.gluonhq.attach:storage:4.0.9" level="project" />
     <orderEntry type="library" name="Maven: com.gluonhq.attach:util:4.0.9" level="project" />
+    <orderEntry type="library" name="Maven: com.gluonhq.attach:display:desktop:4.0.9" level="project" />
+    <orderEntry type="library" name="Maven: com.gluonhq.attach:lifecycle:desktop:4.0.9" level="project" />
+    <orderEntry type="library" name="Maven: com.gluonhq.attach:storage:desktop:4.0.9" level="project" />
   </component>
 </module>

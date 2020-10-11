@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gluonapplication</groupId>
-    <artifactId>inventorytestgluon</artifactId>
+    <artifactId>inventory_test_gluon</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>InventoryTestGluon</name>

@@ -43,6 +43,6 @@ jobs:
         mvn client:build
     - uses: actions/upload-artifact@v2
       with:
-        name: client
-        path: ./target/client/
+        name: x86_64-linux
+        path: ./target/client/x86_64-linux/
       
