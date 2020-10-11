@@ -19,6 +19,7 @@ jobs:
         graalvm-version: 20.2.0
         native-image: true
     - name: Set GraalVM Home
+      shell: bash
       run: | 
         echo "GRAALVM_HOME=$JAVA_HOME" >> $GITHUB_ENV
     - name: Enable Developer Command Prompt
