@@ -40,7 +40,7 @@ jobs:
     - name: Create and list all
       run: | # 
         gu list
-        mvn client:build -P android,!desktop
+        mvn client:build client:package -P android,!desktop
     - uses: actions/upload-artifact@v2
       with:
         name: android_client
